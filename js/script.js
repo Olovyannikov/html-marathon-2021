@@ -175,7 +175,7 @@ const oloSlider = (sliderContainer = '.slider',
     slider.addEventListener('touchstart', swipeStart);
     slider.addEventListener('mousedown', swipeStart);
 
-    arrows.addEventListener('click', function () {
+    arrows.addEventListener('click', function (event) {
         let target = event.target;
 
         if (target.classList.contains('next')) {
