@@ -175,12 +175,13 @@ const oloSlider = (sliderContainer = '.slider',
     slider.addEventListener('touchstart', swipeStart);
     slider.addEventListener('mousedown', swipeStart);
 
+
     arrows.addEventListener('click', function (event) {
         let target = event.target;
 
-        if (target.classList.contains('next')) {
+        if (target.classList.contains('next') && (slideIndex < sliderTrack.querySelectorAll('li').length - 1)) {
             slideIndex++;
-        } else if (target.classList.contains('prev')) {
+        } else if (target.classList.contains('prev') && slideIndex > 0) {
             slideIndex--;
         } else {
             return;
@@ -196,5 +197,5 @@ oloSlider(
     '.js-slider .slider__track',
     '.js-slider ul',
     '.js-slide',
-    '.slider__controls'
+    '.slider__controls',
 );
