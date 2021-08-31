@@ -602,4 +602,83 @@ a {
     justify-content: center;
 }
 
+.review {
+    margin-bottom: 80px;
+}
 
+.review__content {
+    padding: 40px 44px 64px;
+    border: 1px solid var(--c-coral-tree);
+}
+
+.review__title {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.review__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__item {
+    max-width: 300px;
+    font: var(--font-regular);
+    color: var(--c-coral-tree);
+    text-align: center;
+}
+
+.review__item p {
+    margin: 0 0 16px;
+}
+
+.review__item span {
+    font: var(--font-title-small);
+}
+
+.map {
+    position: relative;
+}
+
+.map__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.popup {
+    position: absolute;
+    top: 52px;
+    left: calc(100px + 120px);
+    width: 386px;
+    height: 520px;
+    padding: 40px 35px;
+    background-color: #f7fafc;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    color: var(--c-coral-tree);
+}
+
+.popup__title {
+    margin-bottom: 42px;
+}
+
+.popup__contact {
+    margin-bottom: 20px;
+}
+
+.popup small {
+    display: block;
+    margin-bottom: 21px;
+    font: var(--font-regular);
+}
+
+.popup address,
+.popup a,
+.popup p {
+    margin: 0;
+    font: var(--font-title-small);
+}
