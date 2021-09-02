@@ -199,3 +199,18 @@ oloSlider(
     '.js-slide',
     '.slider__controls',
 );
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav__list');
+const body = document.body;
+
+const doToggleMenu = () => {
+    nav.classList.toggle('active');
+    burger.classList.toggle('active');
+    body.classList.toggle('menu-active');
+}
+
+body.addEventListener('click', (e) => {
+    e.target.classList.contains('js-menu-trigger') ||
+    e.target.classList.contains('js-menu-toggle') ? doToggleMenu() : '';
+})
